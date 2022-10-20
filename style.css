@@ -1,0 +1,297 @@
+/* colors  */
+:root{
+    --White: hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 0%);
+--Dark-Gray: hsl(0, 0%, 55%);
+--Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+/* general styles applied every where in the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background: hsl(0, 0%, 0%);
+  }
+  li{
+    list-style: none;
+  }
+  li a{
+    text-decoration: none;
+    color:hsl(0, 0%, 100%);
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  header{
+    padding:2em;
+    height:45em;
+    justify-content: center;
+    background: url("./images/mobile/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:8em;
+}
+.navlinks{
+    display: flex;
+}
+.links {
+    font-size: 0.9em;
+    margin-left: 1em;
+}
+
+.display{
+    border: solid 2px white;;
+    max-width: 13em;
+    font-size: 2.3em;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-weight: 100;
+     padding:0.6em;
+}
+
+
+  
+  /* this are the designs for the different screen sizes  */
+  /* The mobile size  */
+  @media only screen and (min-width: 375px) {
+    .desktop,.creation-button{
+        display: none;
+    }
+    .mobile{
+        display: block;;
+    }
+
+    .displayed{
+        padding-right: 5em;
+    }
+  
+
+.containerx{
+    background: hsl(0, 0%, 100%);
+    padding:7em 1.5em 0em 1.5em;
+    text-align: center;
+}
+.main-div{
+    margin:2em;
+}
+.main-div-header{
+    font-size: 2.1em;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin-bottom:0.8em;
+}
+.main-div-content{
+    margin:0em 1.5em 5em 1.5em ;
+}
+.creations-title{
+    font-size: 2.1em;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom:1.5em;
+}
+.title{
+    color:hsl(0, 0%, 100%);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    width:5.5em;
+    position: relative;
+    bottom:3em;
+}
+#grit{
+    padding-right: 1em;;
+}
+.creation-buttons{
+    border: solid 1px black;;
+    color:hsl(0, 0%, 0%);
+    padding:0.8em 4em 0.8em 4em;
+    text-transform: uppercase;
+    margin-top: -30px;
+    margin-bottom: 2em;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 1em;;
+
+}
+
+footer{
+    color:white;
+text-align: center;
+margin:2em;
+line-height: 2em;
+display:block;
+}
+.footer-icons{
+        margin-top: 1em;;
+    }
+footer img{
+    padding-left:0.5em;
+}
+    .footer-links{
+        display: block;
+    }
+    .linkz{
+        font-size:14px;
+        padding-left:1em;
+    }
+    .copyrigh{
+        font-size:14px;
+        padding-right:3em;
+      }
+/* THE DESIGN OF THE CONTAINER THAT DOES HIDES THE DROPDOWN  */
+.mobile .navlinks{
+    display: block;
+} 
+.hamburger{
+    width: 30px;
+   }
+.mobile .links {
+    margin-left: 0;
+    line-height: 1.5em;
+    font-size: 1.3em;
+}
+.responsive{
+background :black;
+position:absolute;
+display:none;
+top:0;
+left:0;
+width: 100%;
+height: 85vh;
+z-index: 999;
+margin:0;
+padding:2em 3em 1em 3em;
+}
+.dropdown{
+display:block;
+
+}
+.dropwons-logos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:2em;
+}
+
+/* for tablet suze */
+@media only screen and (min-width: 768px) {
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display:block;
+} 
+.navlinks,.main-section{
+    display: flex;
+}
+
+header{
+    background: url("./images/desktop/image-hero.jpg");
+    background-position: top center;
+    height:30em;
+}
+.navbar{
+    margin-bottom:5em;
+}
+.links {
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+.display{
+    font-size: 2.5em;
+     padding:0.6em;
+}
+.displayed{
+    padding-right: 3em;
+}
+
+.containerx{
+    background: hsl(0, 0%, 100%);
+    padding:6em 4em 6em 4em;
+    text-align: center;
+}
+.main-section{
+    display: flex;
+    margin-bottom: 5em;
+}
+.desktop-image{
+    height:80%;
+    position:relative;
+}
+.main-div{
+    margin:0em;
+    flex:1;
+    height:50%;
+    padding:4em 2em 3em 3em;
+    position:relative;
+    top:10em;
+    right:12em;
+    background:white;
+}
+.main-div-header{
+    font-size: 2.1em;
+    line-height: 1em;
+    margin-bottom:0.8em;
+}
+.main-div-content{
+    font-size: 0.8em;
+}
+.creations-previwv{
+    display:flex;
+    justify-content: space-between;
+}
+.creation-button{
+    display:block;
+    padding:1px 3em 1px 3em;
+    background:black;
+    color:white;
+    font-size:0.9em;
+    height:30px;
+    border:none;
+}
+.creation-button:hover{
+    background:   hsl(0, 0%, 55%);
+ 
+}
+.desktop-images{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .images{
+    padding: 3px 1%;
+    margin-top: 10px;
+    flex-basis: 25%;
+    box-sizing: border-box;
+  }
+  footer{
+    color:white;
+text-align: center;
+margin:1em;
+line-height: 2em;
+display: flex;
+justify-content: space-between;
+}
+.footer-links{
+    display: flex;
+}
+.linkz{
+    font-size:14px;
+    padding-left:1em;
+}
+.copyrigh{
+    font-size:14px;
+  }
+}
