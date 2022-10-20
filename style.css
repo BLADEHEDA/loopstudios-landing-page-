@@ -61,7 +61,10 @@
   
   /* this are the designs for the different screen sizes  */
   /* The mobile size  */
-  @media only screen and (min-width: 375px) {
+  @media only screen and (min-width: 320px) {
+    *{
+        margin:0;
+    }
     .desktop,.creation-button{
         display: none;
     }
